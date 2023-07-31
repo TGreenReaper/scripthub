@@ -40,11 +40,11 @@ UICorner.Parent = TextButton
 UICorner_2.CornerRadius = UDim.new(0, 10)
 UICorner_2.Parent = Blox
 
-TextLabel.Parent = Blox
+TextLabel.Parent = ScreenGui
 TextLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(-0.00152566098, 0, -0.00390631147, 0)
+TextLabel.Position = UDim2.new(0.209000647, 0, 0.136158839, 0)
 TextLabel.Size = UDim2.new(0, 280, 0, 50)
 TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "Script Hubs (By green_reaper)"
@@ -56,7 +56,7 @@ UICorner_3.Parent = TextLabel
 
 -- Scripts:
 
-local function GZDSSY_fake_script() -- TextButton.LocalScript 
+local function PARMEM_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	if game.PlaceId == 2753915549 or game.PlaceId == 7449423635 or game.PlaceId == 4442272183 then
@@ -69,8 +69,8 @@ local function GZDSSY_fake_script() -- TextButton.LocalScript
 		script.Parent.Visible = false
 	end
 end
-coroutine.wrap(GZDSSY_fake_script)()
-local function ZESMIGJ_fake_script() -- Blox.LocalScript 
+coroutine.wrap(PARMEM_fake_script)()
+local function KQRG_fake_script() -- Blox.LocalScript 
 	local script = Instance.new('LocalScript', Blox)
 
 	local ts = game:GetService("TweenService")
@@ -86,8 +86,8 @@ local function ZESMIGJ_fake_script() -- Blox.LocalScript
 	local tween = ts:Create(targ,info,change)
 	tween:Play()
 end
-coroutine.wrap(ZESMIGJ_fake_script)()
-local function NUQD_fake_script() -- Blox.LocalScript 
+coroutine.wrap(KQRG_fake_script)()
+local function SEYCHG_fake_script() -- Blox.LocalScript 
 	local script = Instance.new('LocalScript', Blox)
 
 	local uis = game:GetService('UserInputService')
@@ -97,8 +97,8 @@ local function NUQD_fake_script() -- Blox.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NUQD_fake_script)()
-local function LQVQVEA_fake_script() -- TextLabel.LocalScript 
+coroutine.wrap(SEYCHG_fake_script)()
+local function UAIVX_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	if game.PlaceId == 2753915549 then
@@ -111,8 +111,8 @@ local function LQVQVEA_fake_script() -- TextLabel.LocalScript
 	
 	end
 end
-coroutine.wrap(LQVQVEA_fake_script)()
-local function EMORGU_fake_script() -- TextLabel.LocalScript 
+coroutine.wrap(UAIVX_fake_script)()
+local function JWUTCWG_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	local ts = game:GetService("TweenService")
@@ -128,4 +128,15 @@ local function EMORGU_fake_script() -- TextLabel.LocalScript
 	local tween = ts:Create(targ,info,change)
 	tween:Play()
 end
-coroutine.wrap(EMORGU_fake_script)()
+coroutine.wrap(JWUTCWG_fake_script)()
+local function ORBCVFO_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local uis = game:GetService('UserInputService')
+	uis.InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.LeftAlt then
+			script.Parent.Visible = not script.Parent.Visible
+		end
+	end)
+end
+coroutine.wrap(ORBCVFO_fake_script)()
